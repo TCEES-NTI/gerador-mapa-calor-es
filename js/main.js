@@ -8,8 +8,6 @@ function initializeMap (data) {
       dataFormat: 'json',
       dataSource: {
         "chart": {
-          "caption": "Annual Sales by State",
-          "subcaption": "Last year",
           "entityFillHoverColor": "#cccccc",
           "numberPrefix": "%",
           "exportEnabled": "1",
