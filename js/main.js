@@ -48,6 +48,7 @@ function csvParser(text, cabecalhos, idColumNumber, idColumName, valueColumNumbe
       id: columns[idColumNumber - 1],
       value: parseFloat(columns[valueColumNumber - 1].replace(',', '.')) * 100,
       displayValue: columns[idColumName - 1],
+      fontColor: ['3205309', '3202009', '3203320'].indexOf(columns[idColumNumber - 1]) !== -1 ? "#000000" : "#FFFFFF",
       showLabel: "1",
       fontBold: "1"
     }
