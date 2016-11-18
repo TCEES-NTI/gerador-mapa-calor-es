@@ -50,7 +50,7 @@ function csvParser(text, cabecalhos, idColumNumber, idColumName, valueColumNumbe
       displayValue: columns[idColumName - 1],
       fontColor: ['3205309', '3202009', '3203320'].indexOf(columns[idColumNumber - 1]) !== -1 ? "#000000" : "#FFFFFF",
       showLabel: "1",
-      fontBold: "1"
+      fontBold: ['3205309', '3202009', '3203320'].indexOf(columns[idColumNumber - 1]) !== -1 ? "1" : "0"
     }
   })
   initializeMap(data)
