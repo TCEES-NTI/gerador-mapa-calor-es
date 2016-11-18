@@ -48,7 +48,8 @@ function csvParser(text, cabecalhos, idColumNumber, idColumName, valueColumNumbe
       id: columns[idColumNumber - 1],
       value: parseFloat(columns[valueColumNumber - 1].replace(',', '.')) * 100,
       displayValue: columns[idColumName - 1],
-      showLabel: "1"
+      showLabel: "1",
+      fontBold: "1"
     }
   })
   initializeMap(data)
